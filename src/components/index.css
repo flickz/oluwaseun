@@ -1,0 +1,86 @@
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Source Sans Pro';
+  font-size: 45px;
+  font-weight: 600;
+  word-wrap: wrap;
+  color: #fff;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 0.1em;
+  letter-spacing: .04em;
+  color: #fff;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+}
+
+a {
+  margin: 12px 10px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+    letter-spacing: -.01em;
+    line-height: 0.2em;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 0.3em;
+    letter-spacing: .04em;
+  }
+  .linksContainer {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 56px;
+  }
+  h3 {
+    font-size: 36px;
+  }
+}

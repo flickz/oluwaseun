@@ -1,22 +1,23 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import "../components/index.css"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  <React.Fragment>
+    <SEO title="Oluwaseun Omoyajowo" />
+    <div className="container">
+      <h1>Hi I'm Oluwaseun Omoyajowo</h1>
+      <h3>Software Engineer</h3>
+      <div className="linksContainer">
+        <a href="https://github.com/flickz" target="_blank" rel="noreferrer">Github</a>
+        <a href="mailto:omoyajowojowo2015@gmail.com?subject=Hello">Email</a>
+        <a href="https://www.instagram.com/flickz_oluwaseun" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://medium.com/@oluwaseunOmoya" target="_blank" rel="noreferrer">Blog</a>
+        <a href="https://twitter.com/oluwaseunOmoya" target="_blank" rel="noreferrer">Twitter</a>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+  </React.Fragment>
 )
 
 export default IndexPage
